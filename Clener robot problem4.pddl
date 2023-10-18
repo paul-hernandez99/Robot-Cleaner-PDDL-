@@ -3,7 +3,7 @@
   (:domain robot-cleaner)
   (:objects
     o1 o2 o3 o4 o5 o6 o7 o8 o9 o10 o11 o12 o13 o14 o15 o16
-    box1 box2 box3 box4 box5 box6 box7 box8 box9 box10
+    box1 box2 box3 box4 box5 box6 box7 box8 box9 box10 box11
     robot
   )
   (:init
@@ -23,7 +23,6 @@
     (adjacent o11 o12) (adjacent o12 o11) (adjacent o11 o15) (adjacent o15 o11)
 
     (empty o1)
-    (empty o12)
     (empty o13)
     (empty o14)
     (empty o15)
@@ -39,7 +38,7 @@
     (box-location box8 o9)
     (box-location box9 o10)
     (box-location box10 o11)
-
+    (box-location box11 o12)
 
     (dirty o1)
     (dirty o2)
@@ -65,6 +64,7 @@
       (clean o10) (clean o11) (clean o12) (clean o13) (clean o14) (clean o15) (clean o16)
       (box-location box1 o15) (box-location box2 o14) (box-location box3 o13) (box-location box4 o12) (box-location box5 o11)
       (box-location box6 o10) (box-location box7 o9) (box-location box8 o8) (box-location box9 o7) (box-location box10 o6)
+      (box-location box11 o5)
       (robot-location o1)
     )
   )
